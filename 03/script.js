@@ -13,23 +13,23 @@
 // const set = new Set()
 
 
-const sm = document.getElementById('small')
-const md = document.getElementById('medium')
-const bg = document.getElementById('big')
-
-
-function handler_1(text) {
-    console.log(text)
-}
-
-function handler_2(text) {
-    console.log(text)
-}
-
-function handler_3(e) {
-    e.stopPropagation()
-    console.log(e.currentTarget.id)
-}
+// const sm = document.getElementById('small')
+// const md = document.getElementById('medium')
+// const bg = document.getElementById('big')
+//
+//
+// function handler_1(text) {
+//     console.log(text)
+// }
+//
+// function handler_2(text) {
+//     console.log(text)
+// }
+//
+// function handler_3(e) {
+//     e.stopPropagation()
+//     console.log(e.currentTarget.id)
+// }
 
 
 // function handler_3(e) {
