@@ -30,3 +30,36 @@ const createPrint = (name) => {
 
 setTimeout(createPrint('Siri'), 100)
 setTimeout(createPrint('Alexa'), 100)
+
+
+const thunkMiddleware = (thunk) => {
+    thunk({title: superObject}, () => {
+    })
+}
+
+const getUserCreator = () => {
+    const thunk1 = (superObject, superFunction) => {
+        fetch('https://react.dev/')
+    }
+    return thunk1
+}
+thunkMiddleware(getUserCreator(10))
+
+
+const func1 = () => {
+    return () => {
+        console.log(10)
+    }
+}
+
+func1()
+
+
+const sum = (a, b) => {
+    return a + b
+}
+console.log(sum(1, 20)())
+
+
+const func2 = (a) => (b) => (c) => (d) => console.log(a + b + c + d)
+func2(1)(2)(3)(4)
